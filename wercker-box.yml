@@ -1,5 +1,5 @@
 name: gox-bluetooth
-version: 1.0.0
+version: 1.1.1
 inherits: tcnksm/gox@0.2.0
 type: main
 platform: ubuntu@12.04
@@ -13,7 +13,8 @@ keywords:
     - libc
 packages:
   - libbluetooth-dev@4.98-2ubuntu7
+  - libc6-dev@2.15-0ubuntu10.9
 script: |
   sudo apt-get update -y
   sudo apt-get upgrade -y
-  sudo apt-get install -y libbluetooth-dev
+  sudo apt-get install -y libbluetooth-dev libc6-dev-amd64 libc6-dev-i386
