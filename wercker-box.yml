@@ -11,6 +11,8 @@ keywords:
     - cgo
     - bluetooth
     - libc
+packages:
+  - libbluetooth-dev@4.98-2ubuntu7
 script: |
   sudo apt-get update -y
   sudo apt-get upgrade -y
