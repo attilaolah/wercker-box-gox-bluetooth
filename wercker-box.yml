@@ -1,4 +1,4 @@
-name: gox
+name: gox-bluetooth
 version: 1.0.0
 inherits: tcnksm/gox@0.2.0
 type: main
@@ -9,7 +9,9 @@ keywords:
     - golang
     - cross-compile
     - cgo
-    - libc
     - bluetooth
+    - libc
 script: |
-  sudo apt-get install -y linux-libc-dev libbluetooth-dev
+  sudo apt-get update -y
+  sudo apt-get upgrade -y
+  sudo apt-get install -y libbluetooth-dev
